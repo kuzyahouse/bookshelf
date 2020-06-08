@@ -17,6 +17,9 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -32,7 +35,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Блог</a>
         <div class="dropdown-menu" aria-labelledby="dropdown03">
-          <a class="dropdown-item" href="#">Категории</a>
+          <a class="dropdown-item" href="{{route('admin.category.index')}}">Категории</a>
           <a class="dropdown-item" href="#">Материалы</a>
         </div>
       </li>
@@ -67,7 +70,7 @@
             <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
               data-parent="#accordionEx1">
               <div class="card-body">
-                <a class="dropdown-item" href="#">Категории</a>
+                <a class="dropdown-item" href="{{route('admin.category.index')}}">Категории</a>
                 <a class="dropdown-item" href="#">Материалы</a>
               </div>
             </div>
